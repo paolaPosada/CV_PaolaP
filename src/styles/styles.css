@@ -4,18 +4,22 @@
 
 .item {
     width: 70%;
-	@apply
-		bg-indigo-700 text-gray-100
-		text-xl font-bold
-		flex items-center content-center justify-center
+    @apply
+    flex 
+    flex-wrap 
+    justify-center 
+    items-center 
+    h-screen
 }
 
 .itemIzq {
     width: 30%;
+    height: 1124px;
     background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
 	@apply
-		text-xl font-bold
-        flex justify-center
+    flex 
+    flex-wrap 
+    justify-center 
 }
 
 .font-2xl{
@@ -26,7 +30,7 @@
           font-normal
           text-center
           p-0.5
-          text-gray-900
+          text-gray-700
 }
 
 .font-3xl-SemiB {
@@ -40,6 +44,54 @@
 	  text-gray-900
 }
 
+.box {
+	@apply
+        mx-4
+        px-3
+
+}
+
+.grid2{
+    display:grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap:10px;
+    height: calc(100vh - 10px);
+
+}
+
+.subtitle {
+    color : #5B76FC;
+    @apply
+	  font-sans
+	  text-3xl
+	  not-italic
+	  font-semibold
+	  text-center
+	  p-0
+}
+
+.subitem {
+    color : #FC5C7D;
+    @apply
+	  font-sans
+	  text-xl
+	  not-italic
+	  font-medium
+	  text-justify
+	  p-0
+}
+
+.itemInf {
+    color : #6B7280;
+    @apply
+	  font-sans
+	  text-xl
+	  not-italic
+	  font-bold
+	  text-justify
+	  p-0
+}
+
 .font-xl{
     @apply
     font-sans
@@ -50,3 +102,12 @@
     p-0
     text-gray-900
 }
+
+.progressB{
+    background: rgba(201, 105, 169, 0.86);
+}
+
+.progressBk{
+    background: rgba(193, 195, 199, 0.986);
+}
+
