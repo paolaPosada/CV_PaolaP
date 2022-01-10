@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+    width: 70%;
+	@apply
+		bg-indigo-700 text-gray-100
+		text-xl font-bold
+		flex items-center content-center justify-center
+}
+
+.itemIzq {
+    width: 30%;
+    background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
+	@apply
+		text-xl font-bold
+        flex justify-center
+}
+
+.font-2xl{
+        @apply
+          font-sans
+          text-2xl
+          not-italic
+          font-normal
+          text-center
+          p-0.5
+          text-gray-900
+}
+
+.font-3xl-SemiB {
+    @apply
+	  font-sans
+	  text-3xl
+	  not-italic
+	  font-semibold
+	  text-center
+	  p-0
+	  text-gray-900
+}
+
+.font-xl{
+    @apply
+    font-sans
+    text-xl
+    not-italic
+    font-normal
+    text-justify
+    p-0
+    text-gray-900
+}
