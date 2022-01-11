@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { AcademicInformation } from './AcademicInformation';
+
 import { getInfoByType } from '../../selectors/getInfoByType';
 import { LanguagesInformation } from './LanguagesInformation';
 import { WorkingInformation } from './WorkingInformation';
@@ -17,6 +18,7 @@ export const ListInformation = ({ Tipo }) => {
                     ?
                     <div>
                         <p className='subtitle'>Información acádemica</p>
+                        <br></br>
                         {information.map(info => (
                             <AcademicInformation key={info.ID}
                                 {...info}>

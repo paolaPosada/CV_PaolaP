@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .item {
-    width: 70%;
+    width: 68%;
     @apply
     flex 
     flex-wrap 
@@ -13,8 +13,7 @@
 }
 
 .itemIzq {
-    width: 30%;
-    height: 1124px;
+    width: 32%;
     background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
 	@apply
     flex 

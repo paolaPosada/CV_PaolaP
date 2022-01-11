@@ -27,7 +27,7 @@ const Homepage = () => {
                         <InformationKnowledge></InformationKnowledge>
                     </div>
                     <div className="box row-start-3 row-span-3 col-start-1">
-                    <br></br>
+                        <br></br>
                         <ListInformation Tipo='Laboral'></ListInformation>
                     </div>
                     <div className="box row-start-4 col-start-2">
@@ -37,11 +37,11 @@ const Homepage = () => {
                     <div className="box row-start-3 col-start-2">
                         <ListInformation Tipo='Cursos'></ListInformation>
                     </div>
-                    <img src="https://i.ibb.co/dbFtbZy/Vector.png"></img>
+                    <div className='relative'>
+                        <img className='absolute right-0 -bottom-0' src="https://i.ibb.co/dbFtbZy/Vector.png"></img>
+                    </div>
                 </div>
             </div >
-            
-           
         </div>
     )
 }
