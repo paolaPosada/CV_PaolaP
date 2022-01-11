@@ -41,10 +41,7 @@ export const information = [
         'Cargo': 'Auxiliar de programación.',
         'Institucion':'Universidad de Antioquia, 2021', 
         'Funcion':[
-            'Creación de aplicaciones web usando el framework Angular.',
-            'Creación de scripts SQL.',
-            'Manejo de plugins en Moodle.',
-            'Diseño de cursos usando Moodle.'
+            'Creación de aplicaciones web usando el framework Angular.','Creación de scripts SQL.','Manejo de plugins en Moodle.','Diseño de cursos usando Moodle.'
         ]
     },
     {

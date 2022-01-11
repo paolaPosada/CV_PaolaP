@@ -2,23 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-.item {
-    width: 68%;
-    @apply
-    flex 
-    flex-wrap 
-    justify-center 
-    items-center 
-    h-screen
+
+
+@media (min-width: 1024px) {
+    .item {
+        width: 68%;
+        @apply
+        flex 
+        flex-wrap 
+        justify-center 
+        items-center 
+        h-screen
+    }
+    .itemIzq {
+        width: 32%;
+        background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
+        @apply
+        flex 
+        flex-wrap
+        justify-center 
+    }
+    .grid2 {
+        display:grid;
+        grid-template-rows: auto auto auto auto;
+        grid-gap:10px;
+        height: calc(100vh - 10px);
+        @apply
+        grid-cols-2
+    
+    }
+    .subtitleR, .subtitleL  {
+        color : #5B76FC;
+        @apply
+          font-sans
+          text-3xl
+          not-italic
+          font-semibold
+          text-center
+          p-0
+    }
+    .progressBk{
+        background: rgba(193, 195, 199, 0.986);
+    }
+    
 }
 
-.itemIzq {
-    width: 32%;
-    background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
-	@apply
-    flex 
-    flex-wrap 
-    justify-center 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .item {
+        width: 50%;
+        @apply
+        flex 
+        flex-wrap 
+        justify-center 
+        items-center 
+        h-screen
+    }
+    .itemIzq {
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
+        @apply
+        flex 
+        flex-wrap 
+        justify-center 
+    }
+    .grid2{
+        display:grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-gap:10px;
+        height: calc(100vh - 10px);
+        @apply
+        grid-cols-1
+    }
+    .subtitleL {
+        @apply
+          font-sans
+          text-3xl
+          not-italic
+          font-semibold
+          text-center
+          p-0
+          text-gray-900
+    }
+    .subtitleR  {
+        color : #5B76FC;
+        @apply
+          font-sans
+          text-3xl
+          not-italic
+          font-semibold
+          text-center
+          p-0
+    }
+    .progressBk{
+        background: rgba(239, 243, 251, 0.83);
+    }
 }
 
 .font-2xl{
@@ -48,25 +126,6 @@
         mx-4
         px-3
 
-}
-
-.grid2{
-    display:grid;
-    grid-template-rows: auto auto auto auto;
-    grid-gap:10px;
-    height: calc(100vh - 10px);
-
-}
-
-.subtitle {
-    color : #5B76FC;
-    @apply
-	  font-sans
-	  text-3xl
-	  not-italic
-	  font-semibold
-	  text-center
-	  p-0
 }
 
 .subitem {
@@ -106,7 +165,5 @@
     background: rgba(201, 105, 169, 0.86);
 }
 
-.progressBk{
-    background: rgba(193, 195, 199, 0.986);
-}
+
 
