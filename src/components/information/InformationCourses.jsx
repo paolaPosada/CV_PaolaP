@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const InformationCourses = ({ Nombre, Plataforma }) => {
 
@@ -9,3 +10,8 @@ export const InformationCourses = ({ Nombre, Plataforma }) => {
         </div>
     )
 }
+
+InformationCourses.propTypes = {
+    Nombre: PropTypes.string.isRequired,
+    Plataforma: PropTypes.string.isRequired,
+};

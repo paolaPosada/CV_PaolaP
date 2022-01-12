@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const WorkingInformation = ({ Cargo, Institucion, Funcion }) => {
 
@@ -19,3 +20,9 @@ export const WorkingInformation = ({ Cargo, Institucion, Funcion }) => {
         </div>
     )
 }
+
+WorkingInformation.propTypes = {
+    Cargo: PropTypes.string.isRequired,
+    Institucion: PropTypes.string.isRequired,
+    Funcion: PropTypes.array.isRequired
+};

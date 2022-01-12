@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react'
-import { AcademicInformation } from './AcademicInformation';
+import PropTypes from 'prop-types'
 
+import { AcademicInformation } from './AcademicInformation';
 import { getInfoByType } from '../../selectors/getInfoByType';
 import { LanguagesInformation } from './LanguagesInformation';
 import { WorkingInformation } from './WorkingInformation';
@@ -89,3 +90,7 @@ export const ListInformation = ({ Tipo }) => {
 
     )
 }
+
+ListInformation.propTypes = {
+    Tipo: PropTypes.string.isRequired
+};

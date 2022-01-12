@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const ProgressBar = ({ Nombre, porcentaje }) => {
     return (
@@ -13,6 +14,10 @@ export const ProgressBar = ({ Nombre, porcentaje }) => {
                 </div>
             </div>
         </div>
-
     )
 }
+
+ProgressBar.propTypes = {
+    Nombre: PropTypes.string.isRequired,
+    porcentaje: PropTypes.string.isRequired
+};

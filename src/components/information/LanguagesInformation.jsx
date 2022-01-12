@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export const LanguagesInformation = ({ Contenido }) => {
 
@@ -17,3 +18,7 @@ export const LanguagesInformation = ({ Contenido }) => {
         </div>
     )
 }
+
+LanguagesInformation.propTypes = {
+    Contenido: PropTypes.array.isRequired
+};
