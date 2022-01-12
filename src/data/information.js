@@ -21,8 +21,8 @@ export const information = [
         'ID':'4',
         'Tipo':'Idiomas',
         'Contenido': [
-            'Inglés - intemedio',
-            'Español - natal'
+            'Inglés - intermedio',
+            'Español - lengua materna'
         ]
     },
     {
