@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@media (min-width: 1024px) {
+/* xl */
+@media (min-width: 1297px) and (max-width: 3000px) {
     .item {
         width: 68%;
         @apply
+        justify-center
         flex 
-        flex-wrap 
-        justify-center 
-        items-center 
-        h-screen
+        
     }
     .itemIzq {
         width: 32%;
@@ -21,12 +18,60 @@
         flex 
         flex-wrap
         justify-center 
+        px-5 
     }
     .grid2 {
         display:grid;
-        grid-template-rows: auto auto auto auto;
         grid-gap:10px;
-        height: calc(100vh - 10px);
+        @apply
+        grid-cols-2
+        align-middle
+    }
+    .subtitleL {
+        @apply
+          font-sans
+          text-3xl
+          not-italic
+          font-semibold
+          text-center
+          p-0
+          text-gray-900
+    }
+    .subtitleR  {
+        color : #5B76FC;
+        @apply
+          font-sans
+          text-3xl
+          not-italic
+          font-semibold
+          text-center
+          p-0
+    }
+    .progressBk{
+        background: rgba(193, 195, 199, 0.986);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) and (max-width: 1296px) {
+    .item {
+        width: 68%;
+        @apply
+        justify-center 
+        items-center 
+    }
+    .itemIzq {
+        width: 32%;
+        background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
+        @apply
+        flex 
+        flex-wrap
+        justify-center 
+        px-5 
+    }
+    .grid2 {
+        display:grid;
+        grid-gap:10px;
         @apply
         grid-cols-2
     
@@ -44,33 +89,23 @@
     .progressBk{
         background: rgba(193, 195, 199, 0.986);
     }
-    
 }
 
+/* md */
 @media (min-width: 768px) and (max-width: 1023px) {
     .item {
         width: 50%;
-        @apply
-        flex 
-        flex-wrap 
-        justify-center 
-        items-center 
-        h-screen
     }
     .itemIzq {
         width: 50%;
-        height: 100%;
         background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
         @apply
-        flex 
-        flex-wrap 
         justify-center 
+        px-5 
     }
     .grid2{
         display:grid;
-        grid-template-rows: auto auto auto auto auto auto;
         grid-gap:10px;
-        height: calc(100vh - 10px);
         @apply
         grid-cols-1
     }
@@ -97,6 +132,12 @@
     .progressBk{
         background: rgba(239, 243, 251, 0.83);
     }
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .font-2xl{
