@@ -4,7 +4,7 @@ export const InformationCourses = ({ Nombre, Plataforma }) => {
 
     return (
         <div>
-            <p className='subitem'>{Nombre}</p>
+            <p className='subitem sm:text-gray-900'>{Nombre}</p>
             <p className='font-xl'>{Plataforma}</p>
         </div>
     )

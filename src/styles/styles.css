@@ -4,6 +4,15 @@
 
 /* xl */
 @media (min-width: 1297px) and (max-width: 3000px) {
+    .fuentes{
+        @apply
+        font-sans
+        text-3xl
+        not-italic
+        font-semibold
+        text-center
+        p-0
+    }
     .item {
         width: 68%;
         @apply
@@ -29,23 +38,10 @@
     }
     .subtitleL {
         @apply
-          font-sans
-          text-3xl
-          not-italic
-          font-semibold
-          text-center
-          p-0
           text-gray-900
     }
     .subtitleR  {
         color : #5B76FC;
-        @apply
-          font-sans
-          text-3xl
-          not-italic
-          font-semibold
-          text-center
-          p-0
     }
     .progressBk{
         background: rgba(193, 195, 199, 0.986);
@@ -54,6 +50,16 @@
 
 /* lg */
 @media (min-width: 1024px) and (max-width: 1296px) {
+    .fuentes{
+        color : #5B76FC;
+        @apply
+        font-sans
+        text-3xl
+        not-italic
+        font-semibold
+        text-center
+        p-0
+    }
     .item {
         width: 68%;
         @apply
@@ -76,16 +82,6 @@
         grid-cols-2
     
     }
-    .subtitleR, .subtitleL  {
-        color : #5B76FC;
-        @apply
-          font-sans
-          text-3xl
-          not-italic
-          font-semibold
-          text-center
-          p-0
-    }
     .progressBk{
         background: rgba(193, 195, 199, 0.986);
     }
@@ -93,8 +89,20 @@
 
 /* md */
 @media (min-width: 768px) and (max-width: 1023px) {
+    .fuentes{
+        @apply
+        font-sans
+        text-3xl
+        not-italic
+        font-semibold
+        text-center
+        p-0
+    }
     .item {
         width: 50%;
+        @apply
+        pt-3
+        
     }
     .itemIzq {
         width: 50%;
@@ -102,6 +110,7 @@
         @apply
         justify-center 
         px-5 
+        pt-3
     }
     .grid2{
         display:grid;
@@ -111,28 +120,43 @@
     }
     .subtitleL {
         @apply
-          font-sans
-          text-3xl
-          not-italic
-          font-semibold
-          text-center
-          p-0
           text-gray-900
     }
     .subtitleR  {
         color : #5B76FC;
-        @apply
-          font-sans
-          text-3xl
-          not-italic
-          font-semibold
-          text-center
-          p-0
     }
     .progressBk{
         background: rgba(239, 243, 251, 0.83);
     }
 }
+
+/* sm */
+@media (max-width: 767px) {
+    .fuentes{
+        @apply
+        font-sans
+        text-3xl
+        not-italic
+        font-semibold
+        text-center
+        p-0
+        text-gray-900
+  }
+    .itemIzq {
+        width: 100%;
+        background: linear-gradient(179.93deg, rgba(252, 92, 125, 0.3825) 0.06%, rgba(167, 109, 186, 0.351) 50%, rgba(106, 130, 251, 0.396) 99.94%);
+        @apply
+        justify-center 
+        p-8 
+    }
+    .progressBk{
+        background: rgba(239, 243, 251, 0.83);
+    }
+}
+
+
+
+
 
 .contenedor {
     display: flex;
@@ -140,27 +164,6 @@
     flex-wrap: wrap;
 }
 
-.font-2xl{
-        @apply
-          font-sans
-          text-2xl
-          not-italic
-          font-normal
-          text-center
-          p-0.5
-          text-gray-700
-}
-
-.font-3xl-SemiB {
-    @apply
-	  font-sans
-	  text-3xl
-	  not-italic
-	  font-semibold
-	  text-center
-	  p-0
-	  text-gray-900
-}
 
 .box {
 	@apply

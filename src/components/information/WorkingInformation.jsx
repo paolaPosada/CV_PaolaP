@@ -5,8 +5,8 @@ export const WorkingInformation = ({ Cargo, Institucion, Funcion }) => {
     return (
         <div>
             <br></br>
-            <p className='itemInf'>{Cargo}</p>
-            <p className='subitem'>{Institucion}</p>
+            <p className='itemInf sm:text-gray-900'>{Cargo}</p>
+            <p className='subitem sm:text-gray-900'>{Institucion}</p>
             <ul className='list-disc list-inside pl-1 flex-col'>
                 {
                     Funcion.map((info, index) => 

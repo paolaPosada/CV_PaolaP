@@ -1,13 +1,11 @@
 import React from 'react'
-import { LanguagesInformation } from './information/LanguagesInformation'
-import { ListInformation } from './information/ListInformation'
 
 export const AboutMe = () => {
     return (
         <div className='flex flex-wrap justify-center'>
             <div className='flex flex-col content-center justify-center gap-2 '>
                 <div className="flex justify-center" >
-                    <img src="https://i.ibb.co/2jbtXwB/descarga.png" className="h-72 w-auto mt-3" />
+                    <img src="https://i.ibb.co/2jbtXwB/descarga.png" alt='Paola Posada' className="h-72 w-auto mt-3" />
                 </div>
                 <div>
                     <p className='text-2xl font-medium text-gray-900 py-2'>paola.posada1@udea.edu.co</p>
@@ -23,9 +21,9 @@ export const AboutMe = () => {
             </div>
             <div>
                 <br></br>
-                <p className="font-3xl-SemiB">Información sobre mí</p>
+                <p className="font-sans text-3xl  not-italic font-semibold text-center p-0 text-gray-900">Información sobre mí</p>
                 <br></br>
-                <p className="font-xl">Soy una persona íntegra, responsable y respetuosa, me gusta estar en constante aprendizaje y cuento la capacidad de aprender rápidamente.
+                <p className="font-xl">Soy una persona íntegra, responsable y respetuosa, me gusta estar en constante aprendizaje y cuento con la capacidad de aprender rápidamente.
                     Busco crecer en el campo personal y profesional, aumentando y aplicando los conocimientos que he adquirido,
                     teniendo siempre presente los valores morales y éticos.</p>
             </div>

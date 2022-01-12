@@ -17,7 +17,7 @@ export const ListInformation = ({ Tipo }) => {
                 Tipo === 'Academica'
                     ?
                     <div>
-                        <p className='subtitleR'>Información acádemica</p>
+                        <p className='fuentes subtitleR'>Información acádemica</p>
                         <br></br>
                         {information.map(info => (
                             <AcademicInformation key={info.ID}
@@ -40,7 +40,7 @@ export const ListInformation = ({ Tipo }) => {
                         : Tipo === 'Laboral'
                             ?
                             <div>
-                                <p className='subtitleR'>Información Laboral</p>
+                                <p className='fuentes subtitleR'>Información Laboral</p>
                                 {
 
                                     information.map(info => (
@@ -54,7 +54,7 @@ export const ListInformation = ({ Tipo }) => {
                             : Tipo === 'Cursos'
                                 ?
                                 <div>
-                                    <p className='subtitleR'>Cursos y certificaciones</p>
+                                    <p className='fuentes subtitleR'>Cursos y certificaciones</p>
                                     <br></br>
                                     {
 
@@ -69,7 +69,7 @@ export const ListInformation = ({ Tipo }) => {
                                 : Tipo === 'Hobbies'
                                     ?
                                     <div>
-                                        <p className='subtitleL'>Hobbies</p>
+                                        <p className='fuentes subtitleL'>Hobbies</p>
                                         <br></br>
                                         {
 
