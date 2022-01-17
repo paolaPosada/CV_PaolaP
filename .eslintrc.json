@@ -4,18 +4,74 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
     ],
     "parserOptions": {
-        "sourceType": "module",
-        "allowImportExportEverywhere": true,
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 13
+        "ecmaVersion": 12,
+        "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
-    "rules": {}
+    "rules": {
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": [
+                    ".*"
+                ]
+            }
+        ],
+        "prefer-destructuring": "warn",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".jsx",
+                    ".js"
+                ]
+            }
+        ],
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/require-default-props": "off",
+        "no-use-before-define": "off",
+        "import/no-unresolved": "off",
+        "camelcase": "off",
+        "no-underscore-dangle": "off",
+        "react/jsx-props-no-spreading": "off",
+        "import/prefer-default-export": "off",
+        "arrow-body-style": "warn",
+        "no-nested-ternary": "warn",
+        "react/function-component-definition": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "no-console": "error",
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": [
+                    "Link"
+                ],
+                "specialLink": [
+                    "hrefLeft",
+                    "hrefRight"
+                ],
+                "aspects": [
+                    "invalidHref",
+                    "preferButton"
+                ]
+            }
+        ]
+    }
 }

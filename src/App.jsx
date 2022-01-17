@@ -1,11 +1,10 @@
+/* eslint-disable no-restricted-imports */
 import React from 'react';
-import '../src/styles/styles.css';
-import Homepage from './pages/homePage'
+import './styles/styles.css';
+import Homepage from './pages/homePage';
 
 function App() {
-  return (
-      <Homepage/>
-    );
+  return <Homepage />;
 }
 
 export default App;

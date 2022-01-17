@@ -1,18 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export const InformationHobbies = ({ Nombre }) => {
-
-    return (
-        <div>
-            <ul className='font-xl list-disc list-inside pl-1 flex-col'>
-                <li>{Nombre}</li>
-            </ul>
-
-        </div>
-    )
-}
+export const InformationHobbies = ({ Nombre }) => (
+  <div>
+    <ul className='font-xl list-disc list-inside pl-1 flex-col'>
+      <li>{Nombre}</li>
+    </ul>
+  </div>
+);
 
 InformationHobbies.propTypes = {
-    Nombre: PropTypes.string.isRequired
+  Nombre: PropTypes.string.isRequired,
 };
