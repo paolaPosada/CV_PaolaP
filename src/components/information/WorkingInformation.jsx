@@ -7,10 +7,9 @@ export const WorkingInformation = ({ Cargo, Institucion, Funcion }) => (
     <p className='itemInf sm:text-gray-900'>{Cargo}</p>
     <p className='subitem sm:text-gray-900'>{Institucion}</p>
     <ul className='list-disc list-inside pl-1 flex-col'>
-      {Funcion.map((info, index) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <li key={index} className='font-xl'>
-          {info}
+      {Funcion.map((info) => (
+        <li key={info.ID} className='font-xl'>
+          {info.Definicion}
         </li>
       ))}
     </ul>
@@ -20,5 +19,5 @@ export const WorkingInformation = ({ Cargo, Institucion, Funcion }) => (
 WorkingInformation.propTypes = {
   Cargo: PropTypes.string.isRequired,
   Institucion: PropTypes.string.isRequired,
-  Funcion: PropTypes.arrayOf(PropTypes.string).isRequired,
+  Funcion: PropTypes.arrayOf(PropTypes.arrayOf).isRequired,
 };

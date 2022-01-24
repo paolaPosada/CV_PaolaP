@@ -20,7 +20,16 @@ export const information = [
   {
     ID: `4`,
     Tipo: `Idiomas`,
-    Contenido: [`Inglés - intermedio`, `Español - lengua materna`],
+    Contenido: [
+      {
+        ID: '1',
+        Definicion: `Inglés - intermedio`,
+      },
+      {
+        ID: '2',
+        Definicion: `Español - lengua materna`,
+      },
+    ],
   },
   {
     ID: `5`,
@@ -28,8 +37,14 @@ export const information = [
     Cargo: `Auxiliar en desarrollo del proyecto generación de capacidades con la incorporación de nuevas tendencias en materia de tecnología, investigación aplicada e innovación pública.`,
     Institucion: `Universidad de Antioquia, 2020`,
     Funcion: [
-      `Acompañamiento en el proceso de levantamiento de información de la Secretaría de Suministros y Servicios.`,
-      `Apoyo a la capacitación en las áreas técnicas propuesta por la Universidad para la Secretaría de Suministros y Servicios.`,
+      {
+        ID: '1',
+        Definicion: `Acompañamiento en el proceso de levantamiento de información de la Secretaría de Suministros y Servicios.`,
+      },
+      {
+        ID: '2',
+        Definicion: `Apoyo a la capacitación en las áreas técnicas propuesta por la Universidad para la Secretaría de Suministros y Servicios.`,
+      },
     ],
   },
   {
@@ -38,10 +53,22 @@ export const information = [
     Cargo: `Auxiliar de programación.`,
     Institucion: `Universidad de Antioquia, 2021`,
     Funcion: [
-      `Creación de aplicaciones web usando el framework Angular.`,
-      `Creación de scripts SQL.`,
-      `Manejo de plugins en Moodle.`,
-      `Diseño de cursos usando Moodle.`,
+      {
+        ID: '1',
+        Definicion: `Creación de aplicaciones web usando el framework Angular.`,
+      },
+      {
+        ID: '2',
+        Definicion: `Creación de scripts SQL.`,
+      },
+      {
+        ID: '3',
+        Definicion: `Manejo de plugins en Moodle.`,
+      },
+      {
+        ID: '4',
+        Definicion: `Diseño de cursos usando Moodle.`,
+      },
     ],
   },
   {

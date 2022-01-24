@@ -8,10 +8,9 @@ export const LanguagesInformation = ({ Contenido }) => (
       Idiomas
     </p>
     <br />
-    <ul className='font-xl list-disc list-inside pl-1 flex-col '>
-      {Contenido.map((info, index) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <li key={index}>{info}</li>
+    <ul className='font-xl list-disc list-inside pl-1 flex-col'>
+      {Contenido.map((info) => (
+        <li key={info.ID}>{info.Definicion}</li>
       ))}
     </ul>
     <br />
@@ -19,5 +18,5 @@ export const LanguagesInformation = ({ Contenido }) => (
 );
 
 LanguagesInformation.propTypes = {
-  Contenido: PropTypes.arrayOf(PropTypes.string).isRequired,
+  Contenido: PropTypes.arrayOf(PropTypes.arrayOf).isRequired,
 };
